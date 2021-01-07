@@ -1,0 +1,98 @@
+header { grid-area: title; }
+ main { grid-area: posts; } 
+ aside { grid-area: advertisement; } 
+ extra { grid-area: post2;}
+ footer { grid-area: footer; }
+ 
+.container{
+   display: grid;
+   grid-template-areas:
+   "title title"
+   "advertisement posts "
+   "post2 post2"
+   "footer footer";
+}
+
+  h1 {text-align: center;
+    font-family: sans-serif; 
+    font-size: 36px;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+}
+
+
+  /*nav {
+      text-align: center; 
+      color:#80ca9e;
+      padding-bottom: 2rem;
+}
+.active{
+    color: white;
+    text-align: center;
+}
+  
+h2 {
+    text-align: left;  
+    font-weight: bold;
+    font-size: 20;
+  }
+
+  hr {
+      border: 2px solid#797979; 
+      width: 750px;   
+  }
+  */
+
+  body{
+      width: 800px;
+      background-color: lightgoldenrodyellow;
+      color: black;
+      /*border-left: 4px solid #777777;
+      border-right: 4px solid #777777;
+      border-top: 4px solid #777777;
+      border-bottom: 4px solid #755f5f;*/
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+  }
+  article{
+  margin-left: 5rem;
+
+  }
+
+  extra{
+    margin-left: 2rem;
+    }
+
+  p{
+    font-size: 15px;
+    padding-bottom: 1rem;
+  }
+ 
+  aside{
+      margin-left: 100px;
+      margin-right: 2px;
+      margin-top: 50px;
+      margin-bottom: 2px;
+      /*border-style: double;*/
+      padding: .2rem;
+    
+  }
+
+  footer {
+      text-align: center;
+      font-size: 10px;
+      font-weight: bold;
+      padding: 2rem;
+  }  
+
+  @media (max-width: 576px) {
+    .container {
+      grid-template-areas:
+      "title title"
+      "advertisement posts"
+      "post2 post2"
+      "footer footer";
+    }
+  }
