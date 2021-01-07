@@ -1,15 +1,15 @@
 header { grid-area: title; }
  main { grid-area: posts; } 
- aside { grid-area: advertisement; } 
- extra { grid-area: post2;}
+ aside { grid-area: profilePic; } 
+ article { grid-area: flowerPic;}
  footer { grid-area: footer; }
  
 .container{
    display: grid;
    grid-template-areas:
    "title title"
-   "advertisement posts "
-   "post2 post2"
+   "profilePic posts "
+   "flowerPic flowerPic"
    "footer footer";
 }
 
@@ -44,7 +44,8 @@ h2 {
   */
 
   body{
-      width: 800px;
+      display:flex;
+      /*width: 800px;*/
       background-color: lightgoldenrodyellow;
       color: black;
       /*border-left: 4px solid #777777;
@@ -56,13 +57,10 @@ h2 {
       padding-top: 2rem;
       padding-bottom: 2rem;
   }
+
+
   article{
-  margin-left: 5rem;
-
-  }
-
-  extra{
-    margin-left: 2rem;
+    margin-left: 5rem;
     }
 
   p{
@@ -73,26 +71,41 @@ h2 {
   aside{
       margin-left: 100px;
       margin-right: 2px;
-      margin-top: 50px;
+      margin-top: 70px;
       margin-bottom: 2px;
       /*border-style: double;*/
       padding: .2rem;
     
   }
 
+h3 {
+    text-align: center;  
+  }
+
+  article h5 {
+     text-align: center;
+     margin-bottom: 0;
+     margin-top: 5rem;
+ }
+
+
+  .fContainer {
+    display: inline-block;
+    text-align: center;
+    /*border: 1px solid gray;*/
+    margin-left: 155px;
+    padding: 3px;
+  }
+  
+
   footer {
       text-align: center;
       font-size: 10px;
       font-weight: bold;
+      margin-top: 70px;
       padding: 2rem;
   }  
 
-  @media (max-width: 576px) {
-    .container {
-      grid-template-areas:
-      "title title"
-      "advertisement posts"
-      "post2 post2"
-      "footer footer";
-    }
-  }
+
+  @media (max-width: 570px);
+  
