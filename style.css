@@ -67,7 +67,10 @@ h3 {
     padding: 3px;
   }
   
-
+.pic {
+    width: 200px;
+    height: 200px;
+}
   footer {
       text-align: center;
       font-size: 10px;
@@ -78,6 +81,21 @@ h3 {
 
 
   @media (max-width: 570px){
+.container {
+    width:100vw;
+    border: 2px solid blueviolet;
+    display: grid;
+   grid-template-areas:
+   "header header"
+   "profilePic ."
+   "posts . "
+   "flowerPic ."
+   /* "flowerPic ." */
+   /* "flowerPic ."  */
+   "footer footer";
+}
 
+.fContainer {margin-left: 0px;}
+aside {margin-left: 70px;}
   }
   
